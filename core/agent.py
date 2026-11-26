@@ -13,7 +13,7 @@ class Agent:
         messages=[
             {
                 "role":"system",
-                "content":"system_prompt"
+                "content":self.system_prompt
             },
             {
                 "role":"user",
