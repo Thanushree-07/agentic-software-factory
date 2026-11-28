@@ -1,24 +1,24 @@
 **Overview**  
-Create an AI‑powered coding assistant that understands natural language prompts, generates code snippets, and offers debugging suggestions. It should integrate with popular IDEs and support multiple programming languages.
+Create a basic calculator that accepts two numeric inputs and an operator, then displays the computed result.  
+It must support addition, subtraction, multiplication, and division while handling invalid input gracefully.  
 
 **Requirements**  
-- **Input**: User’s natural‑language request (e.g., “write a Python function to sort a list”).  
-  **Output**: Corresponding code block in the requested language.  
+1. **Input Handling**  
+   - *Input:* Two numeric values (integers or decimals) and a single operator symbol (`+`, `-`, `*`, `/`).  
+   - *Output:* Prompt the user to enter the values and operator; display error messages for non‑numeric or unsupported operator entries.  
 
-- **Input**: Existing code snippet with a highlighted error or performance issue.  
-  **Output**: Suggested fix or optimization, with a brief explanation.  
+2. **Arithmetic Operations**  
+   - *Input:* Valid numeric operands and an operator.  
+   - *Output:* The correct result of the operation, formatted to two decimal places if necessary.  
 
-- **Input**: Project context (file structure, dependencies).  
-  **Output**: Boilerplate code or configuration files (e.g., `requirements.txt`, `package.json`).  
+3. **Division by Zero**  
+   - *Input:* Division operator with a second operand of zero.  
+   - *Output:* An error message indicating that division by zero is not allowed.  
 
-- **Input**: User’s preferred coding style or guidelines.  
-  **Output**: Refactored code that adheres to those style rules.  
+4. **User Interface**  
+   - *Input:* Text prompts in a console or simple GUI.  
+   - *Output:* Clear, readable display of the operands, operator, and result or error message.  
 
-- **Input**: Query about a specific API or library usage.  
-  **Output**: Example usage code and relevant documentation links.  
-
-- **Input**: Request for code review comments.  
-  **Output**: List of potential issues, readability improvements, and best‑practice suggestions.  
-
-- **Input**: Integration request (e.g., “add a unit test for this function”).  
-  **Output**: Generated test case code with assertions.
+5. **Exit Mechanism**  
+   - *Input:* User command (e.g., `q` or `exit`).  
+   - *Output:* Terminate the program gracefully with a goodbye message.
